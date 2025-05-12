@@ -51,15 +51,23 @@ This database includes:
 
 ---
 
-## ⚡ Getting Started
+## 🚀 Getting Started
 
-1. Download the `hopify_saas_realistic_v8.db` SQLite file.
-2. Open it in your favorite **SQL editor that supports SQLite**, such as:
+To explore the Hopify v1 database and its data model:
+
+1. Download the [`hopify_v1_project_files.zip`](link-to-your-zip).
+2. Extract the files locally.
+3. Inside the ZIP, you will find:
+   - The SQLite database file (`hopify_saas_v1.db`).
+   - ER diagram in **PNG** and **PDF** formats.
+   - SQL query pack with starter KPIs.
+   - License and dataset description files.
+
+4. Open the `.db` file using your favorite **SQL editor that supports SQLite**, such as:
    - DB Browser for SQLite
    - DBeaver
    - SQLiteStudio
    - Azure Data Studio (with SQLite extension)
-3. Run SQL queries using the included **query pack** or your own explorations.
 
 ---
 
