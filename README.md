@@ -55,7 +55,7 @@ This database includes:
 
 To explore the Hopify v1 database and its data model:
 
-1. Download the [`hopify_v1_project_files.zip`](link-to-your-zip).
+1. Download the [`hopify_v1_project_files.zip`](https://github.com/jherman9987/hopify_db_v1/blob/main/hopify_saas_dataset.zip).
 2. Extract the files locally.
 3. Inside the ZIP, you will find:
    - The SQLite database file (`hopify_saas_v1.db`).
@@ -106,8 +106,8 @@ The ER (Entity-Relationship) diagram below visualizes the Hopify v8 data model a
 Each table is connected by foreign key constraints, providing a clear view of how customers, subscriptions, orders, payments, and other entities interact within the Hopify SaaS ecosystem.
 
 ### 📥 Download ER Diagram
-- [Hopify v1 Data Model - PNG]()
-- [Hopify v1 Data Model - PDF]()
+- [Hopify v1 Data Model - PNG](https://github.com/jherman9987/hopify_db_v1/blob/main/hopify_v1_model_diagram.png)
+- [Hopify v1 Data Model - PDF](https://github.com/jherman9987/hopify_db_v1/blob/main/hopify_v1_model_diagram.pdf)
 
 > The diagram is designed in landscape orientation for easy review and supports data storytelling, SaaS KPI modeling, and process flow analysis.
 
