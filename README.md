@@ -9,22 +9,20 @@ This dataset simulates the structure, scale, and behavior of a mid-to-large SaaS
 
 **Hopify** is a fictional SaaS company providing e-commerce enablement, payments, and marketplace apps to global customers.
 
-This database includes:
-
-| Table               | Description                                            |
-|---------------------|--------------------------------------------------------|
-| customers           | Customer profiles with segments, signup timestamps, and acquisition source |
-| subscriptions       | Subscription history per customer with change types    |
-| orders              | Customer order headers with timestamps and totals      |
-| order_items         | Detailed product line items per order                  |
-| payments            | Payment records linked to orders (with 3% simulated failures) |
-| churn_events        | Churn logs including reason, timestamp, and behavior-based adjustments |
-| support_tickets     | Support tickets with created, resolved timestamps, and SLA behavior by segment |
-| locations           | 5 global Hopify office locations                      |
-| app_installs        | Apps installed per office location                    |
-| discounts           | Discount campaigns                                    |
-| order_discounts     | Discounts applied to orders                           |
-| products            | Marketplace apps/services, including free and premium |
+| Table               | Description                                          | Key Fields                                     |
+|---------------------|------------------------------------------------------|------------------------------------------------|
+| customers           | Customer profiles with segments and timestamps      | `customer_id`, `signup_date`, `segment`, `acquisition_source` |
+| subscriptions       | Subscription history per customer                   | `subscription_id`, `customer_id`, `start_date`, `status`, `change_type` |
+| orders              | Customer order headers with totals and timestamps   | `order_id`, `customer_id`, `order_date`, `total_amount` |
+| order_items         | Line items per order                                | `order_item_id`, `order_id`, `product_id`, `quantity`, `subtotal` |
+| payments            | Payments linked to orders                           | `payment_id`, `customer_id`, `payment_date`, `payment_amount`, `success` |
+| churn_events        | Churn logs including reason and timestamp           | `churn_id`, `customer_id`, `churn_date`, `churn_reason` |
+| support_tickets     | Support ticket activity per customer                | `ticket_id`, `customer_id`, `created_at`, `resolved_at`, `ticket_category` |
+| app_installs        | App installs by location                            | `install_id`, `location_id`, `product_id`, `install_date` |
+| discounts           | Discount campaigns                                  | `discount_id`, `discount_code`, `discount_percent` |
+| order_discounts     | Discounts applied to orders                         | `order_id`, `discount_id` |
+| products            | Marketplace apps/services                           | `product_id`, `name`, `category`, `price` |
+| locations           | Hopify office locations                             | `location_id`, `city`, `country` |
 
 
 ## 🌍 Business Simulation Parameters
@@ -37,6 +35,7 @@ This database includes:
 - Realistic lifecycle modeling including upgrades, downgrades, reactivations
 - Support SLA realism by customer segment
 - Full Timestamping (`YYYY-MM-DD HH:MM:SS`) across all activities
+
 
 ## 🛠 Key Use Cases
 
@@ -63,7 +62,7 @@ This database includes:
 
 ## 🔗 Data Model Overview
 
-The Hopify v11 database simulates a modern SaaS business structure, supporting advanced analytics, customer lifecycle modeling, and revenue breakdowns.
+The Hopify v1 database simulates a modern SaaS business structure, supporting advanced analytics, customer lifecycle modeling, and revenue breakdowns.
 
 
 ### 🔍 Key Highlights
