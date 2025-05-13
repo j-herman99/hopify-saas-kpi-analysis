@@ -1,7 +1,7 @@
 
-# 🚀 Hopify SaaS Simulated Database (v11)
+# 🚀 Hopify SaaS Simulated Database (v1)
 
-Welcome to the **Hopify SaaS Simulated Database (v11)** — a fictional but business-realistic SQLite database designed for SQL practice, SaaS KPI modeling, and data storytelling.  
+Welcome to the **Hopify SaaS Simulated Database (v1)** — a fictional but business-realistic SQLite database designed for SQL practice, SaaS KPI modeling, and data storytelling.  
 This dataset simulates the structure, scale, and behavior of a mid-to-large SaaS company inspired by operators like Shopify, now enhanced with segment-aware behaviors, support friction, lifecycle churn modeling, and expansion revenue modeling.
 
 ## 📦 Dataset Overview
@@ -49,7 +49,7 @@ This database includes:
 
 ## 🚀 Getting Started
 
-1. Download the `hopify_saas_v11.db`.
+1. Download the `hopify_saas_v1.db`.
 2. Open the `.db` file using your favorite SQL editor that supports SQLite:
    - DB Browser for SQLite
    - DBeaver
