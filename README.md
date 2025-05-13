@@ -4,6 +4,7 @@
 Welcome to the **Hopify SaaS Simulated Database (v1)** — a fictional but business-realistic SQLite database designed for SQL practice, SaaS KPI modeling, and data storytelling.  
 This dataset simulates the structure, scale, and behavior of a mid-to-large SaaS company inspired by operators like Shopify, now enhanced with segment-aware behaviors, support friction, lifecycle churn modeling, and expansion revenue modeling.
 
+
 ## 📦 Dataset Overview
 
 **Hopify** is a fictional SaaS company providing e-commerce enablement, payments, and marketplace apps to global customers.
@@ -24,6 +25,7 @@ This database includes:
 | discounts           | Discount campaigns                                    |
 | order_discounts     | Discounts applied to orders                           |
 | products            | Marketplace apps/services, including free and premium |
+
 
 ## 🌍 Business Simulation Parameters
 
@@ -47,6 +49,7 @@ This database includes:
 - Active user growth tracking (orders & payments)
 - Cross-sell and product category penetration analysis
 
+
 ## 🚀 Getting Started
 
 1. Download the `hopify_saas_v1.db`.
@@ -57,9 +60,11 @@ This database includes:
    - Azure Data Studio (with SQLite extension)
 3. Use the provided SQL query packs or build your own queries to explore SaaS KPIs.
 
+
 ## 🔗 Data Model Overview
 
 The Hopify v11 database simulates a modern SaaS business structure, supporting advanced analytics, customer lifecycle modeling, and revenue breakdowns.
+
 
 ### 🔍 Key Highlights
 
@@ -69,6 +74,7 @@ The Hopify v11 database simulates a modern SaaS business structure, supporting a
 - Marketplace Ecosystem: Tracks app installs by location, product usage, and applied discounts.
 
 The model is fully normalized with foreign key constraints ensuring data integrity, enabling users to confidently explore relationships across entities.
+
 
 ## 📊 Sample Business Scenarios to Explore
 
@@ -86,6 +92,7 @@ The model is fully normalized with foreign key constraints ensuring data integri
 | 10         | LTV by Segment                       | Lifetime Value by customer segment          |
 | 11         | Active User Growth                   | Monthly active customers trend              |
 | 12         | ARPU by Segment                      | Average Revenue Per User trend              |
+
 
 ## 📄 License
 
