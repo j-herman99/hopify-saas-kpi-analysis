@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🚀 Hopify SaaS Simulated Database (v1)
 
 Welcome to the **Hopify SaaS Simulated Database (v1)** — a fictional but business-realistic SQLite database designed for SQL practice, SaaS KPI modeling, and data storytelling.
@@ -116,3 +117,68 @@ The model is fully normalized, reflecting realistic SaaS relational structures.
 Apache 2.0 License  
 This dataset and generator scripts are provided under Apache 2.0 license.
 
+=======
+
+# 📊 Hopify SaaS KPI Analysis
+
+A comprehensive portfolio case study analyzing key SaaS business metrics for **Hopify**, a simulated e-commerce enablement platform. This project demonstrates advanced KPI analysis, data storytelling, and business insight generation using SQL and Python.
+
+## 🏷️ Project Overview
+Hopify is facing challenges in customer retention, revenue growth, and operational efficiency. This analysis explores critical SaaS KPIs to identify key trends, risks, and opportunities.
+
+The project covers:
+- Customer churn behavior
+- Net & Gross Revenue Retention (NRR / GRR)
+- Customer Lifetime Value (LTV)
+- ARPU trends by segment
+- Acquisition funnel insights
+- Support ticket impact on churn
+- Expansion revenue breakdown
+
+## 🛠️ Tools & Methods
+- SQL (SQLite v15 dataset)
+- Python (Pandas, Matplotlib, Seaborn)
+- KPI Benchmarking
+- Cohort & Segment Analysis
+- Data Visualization & Business Storytelling
+
+## 📁 Repository Structure
+```
+/data/         → Hopify database & datasets
+/sql/          → Finalized analysis SQL scripts
+/python/       → Visualization scripts for KPI insights
+/visuals/      → Charts and visuals for storytelling
+/benchmarks/   → KPI benchmark inserts
+/reports/      → Business summaries and key findings
+```
+
+## 🔍 Key Analyses & Deliverables
+- Churn Rate Analysis → Segment trends, benchmarks, visual storytelling
+- Retention Curve & Heatmap → Cohort decay visualization & targets
+- NRR / GRR Analysis → Monthly retention revenue impact
+- ARPU Trends → Revenue per user by segment & month
+- LTV Estimation → Segment-aware profitability modeling
+- Customer Acquisition Funnel → Growth insights & conversion efficiency
+- Support to Churn Correlation → Operational impact on customer retention
+
+## 📊 Sample Visuals
+| Churn Rate by Segment | Cohort Retention Heatmap |
+|----------------------|-------------------------|
+| ## Churn Rate by Segment
+![Churn Rate](visuals/churn_rate_by_segment.png) | ![Retention Heatmap](visuals/cohort_retention_heatmap.png) |
+
+## 📝 Reports & Insights
+- Cohort Retention Executive Summary
+- Revenue Growth & NRR Report
+- LTV & Profitability Findings
+- Segment-level Performance Reviews
+
+## ✅ What This Demonstrates
+- Ability to translate raw SaaS data into business insights.
+- Strong SQL analysis across customer, revenue, and retention KPIs.
+- Data storytelling through visuals & benchmarks.
+- Practical application of FP&A, RevOps, and Business Analyst skills.
+
+### ⭐ Live GitHub Repo (Portfolio Ready)
+This project serves as a showcase of SaaS KPI analysis skills for Business Analyst, FP&A, and Strategic Ops roles.
+>>>>>>> 2b9b5c3 (Initial commit: Hopify SaaS KPI Analysis v1)

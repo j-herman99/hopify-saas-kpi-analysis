@@ -1,0 +1,16 @@
+benchmark_id,metric_category,segment,metric_name,target_value,description
+1,Revenue KPIs,All Segments,MRR Target,2000000.0,Monthly recurring revenue goal
+2,Revenue KPIs,All Segments,NRR % Target,120.0,Target Net Revenue Retention percentage
+3,Revenue KPIs,All Segments,GRR % Target,95.0,Target Gross Revenue Retention percentage
+4,Customer KPIs,All Segments,Monthly Churn % Target,3.5,Target monthly churn rate
+5,Customer KPIs,All Segments,Monthly New Customers Target,2000.0,Target new customer acquisition volume
+6,Support KPIs,All Segments,Avg Resolution Time Target (hrs),48.0,Target average resolution time for tickets
+7,Support KPIs,All Segments,Support to Churn Correlation %,0.3,Expected churn from high support volume
+8,Marketing KPIs,All Segments,MQL Conversion Rate %,15.0,Expected conversion from MQL to paying customer
+9,Marketing KPIs,All Segments,CAC Target,500.0,Customer acquisition cost target (USD)
+10,Revenue KPIs,Enterprise,ARPU Target,1700.0,Enterprise ARPU target
+11,Revenue KPIs,Mid-Market,ARPU Target,1600.0,Mid-Market ARPU target
+12,Revenue KPIs,SMB,ARPU Target,1500.0,SMB ARPU target
+13,Customer KPIs,Enterprise,Retention % Target,90.0,12-month retention target for Enterprise cohorts
+14,Customer KPIs,Mid-Market,Retention % Target,80.0,12-month retention target for Mid-Market cohorts
+15,Customer KPIs,SMB,Retention % Target,70.0,12-month retention target for SMB cohorts
