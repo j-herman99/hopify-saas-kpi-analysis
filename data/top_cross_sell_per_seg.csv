@@ -1,0 +1,13 @@
+Customer Segment,Category Combo,Combo Frequency
+Enterprise,POS Hardware & Software + Payments & Finance,6047
+Enterprise,Financial Services + POS Hardware & Software,3246
+Enterprise,Financial Services + Payments & Finance,1991
+Enterprise,Apps & Integrations + POS Hardware & Software,1324
+Enterprise,Apps & Integrations + Payments & Finance,835
+Enterprise,Apps & Integrations + Financial Services,471
+Mid-Market,Apps & Integrations + Storefront Tools,18875
+Mid-Market,Marketing & Growth + Storefront Tools,6557
+Mid-Market,Apps & Integrations + Marketing & Growth,6502
+SMB,Marketing & Growth + Storefront Tools,23767
+SMB,Logistics & Shipping + Storefront Tools,13189
+SMB,Logistics & Shipping + Marketing & Growth,5263

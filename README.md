@@ -1,184 +1,84 @@
-<<<<<<< HEAD
-# 🚀 Hopify SaaS Simulated Database (v1)
+📊 Hopify SaaS KPI Analysis (v1)
+A comprehensive portfolio case study analyzing key SaaS business metrics for Hopify, a simulated e-commerce enablement platform. This project demonstrates advanced KPI analysis, data storytelling, and business insight generation using SQL and Python.
 
-Welcome to the **Hopify SaaS Simulated Database (v1)** — a fictional but business-realistic SQLite database designed for SQL practice, SaaS KPI modeling, and data storytelling.
-
-This latest version is optimized with **dynamic multi-year scaling, segment-aware behaviors, support friction modeling, benchmarks table, marketing metrics**, and realistic web traffic.
-
----
-
-## 📦 Dataset Overview
-
-**Hopify** is a fictional SaaS company providing e-commerce enablement, payments, and marketplace apps to global customers.
-
-| Table                 | Description                                         | Key Fields                                  |
-|-----------------------|-----------------------------------------------------|----------------------------------------------|
-| customers             | Customer profiles, segment, acquisition source     | `customer_id`, `signup_date`, `segment`, `acquisition_source` |
-| subscriptions         | Subscription lifecycle with change tracking        | `subscription_id`, `customer_id`, `plan_type`, `status`, `change_type` |
-| orders                | Customer order headers with totals                 | `order_id`, `customer_id`, `order_date`, `total_amount` |
-| order_items           | Product line items per order                       | `order_item_id`, `order_id`, `product_id`, `quantity`, `subtotal` |
-| payments              | Payments linked to orders                          | `payment_id`, `customer_id`, `payment_amount`, `payment_date` |
-| churn_events          | Churn logs including reason and timestamp          | `churn_id`, `customer_id`, `churn_date`, `churn_reason` |
-| support_tickets       | Support tickets per customer, with SLA modeling    | `ticket_id`, `customer_id`, `created_at`, `resolved_at`, `ticket_category` |
-| app_installs          | App installs by office location                    | `install_id`, `location_id`, `product_id`, `install_date` |
-| discounts             | Discount campaigns                                 | `discount_id`, `discount_code`, `discount_percent`, `start_date` |
-| order_discounts       | Discounts applied to orders                        | `order_id`, `discount_id` |
-| products              | Core marketplace apps and services                 | `product_id`, `name`, `category`, `price`, `revenue_type` |
-| locations             | Hopify office locations                            | `location_id`, `city`, `country` |
-| marketing_campaigns    | Marketing campaign spend by channel and type      | `campaign_id`, `campaign_name`, `channel`, `campaign_type`, `total_cost` |
-| web_traffic           | Monthly web traffic by channel with leads & MQLs   | `traffic_id`, `traffic_date`, `source_channel`, `visitors`, `leads`, `mqls` |
-| benchmarks            | Target benchmarks for KPIs (MRR, Churn, NRR, etc.) | `benchmark_id`, `category`, `metric_name`, `target_value` |
-
----
-
-## 🌍 Business Simulation Parameters
-
-- **50,000+ Customers across 3 segments (SMB, Mid-Market, Enterprise)**
-- **Multi-year historical data (dynamic up to 3 years)**
-- **Segment-aware behavior on orders, subscriptions, support, churn**
-- **Product category skew by segment**
-- **Dynamic order, product, and support friction modeling**
-- **Integrated benchmarks and marketing metrics**
-- **Dynamic acquisition plan with spikes & dips (seasonality aware)**
-
----
-
-## 🛠 Key Use Cases
-
-- SQL KPI calculation practice (MRR, churn rate, NRR, GRR, ARPU, etc.)
-- Churn & retention analysis by segment, cohort, and customer lifecycle
-- Expansion revenue vs net new revenue breakdown
-- LTV (Lifetime Value) modeling by segment
-- Web traffic to lead/MQL conversion analysis
-- Campaign spend vs web traffic trends
-- Benchmarks vs actual performance reporting
-- Support ticket friction vs churn risk modeling
-- Customer acquisition tracking by source and campaign
-- Product penetration & cross-sell analysis by segment
-
----
-
-## 📊 Sample Business Scenarios to Explore
-
-| Scenario # | Business Case                               | Example Analysis                            |
-|------------|---------------------------------------------|----------------------------------------------|
-| 1          | Churn Analysis                              | Churn rate by month, segment                 |
-| 2          | Revenue Trend Breakdown                     | MRR, GRR, NRR over time                      |
-| 3          | Cohort Retention Analysis                   | Signup cohorts & retention curves            |
-| 4          | Top Product Categories by Revenue           | Revenue by product category                  |
-| 5          | Customer Segmentation Behavior              | Order volume, support by segment             |
-| 6          | Support Ticket Volume vs Churn Risk         | Support interactions vs churn probability    |
-| 7          | NRR & GRR Analysis                          | NRR, GRR by month and segment                |
-| 8          | Customer Acquisition Trend                  | New customers per month, source-based        |
-| 9          | Expansion Revenue Analysis                  | Upsell/cross-sell revenue from existing base |
-| 10         | LTV by Segment                              | Lifetime Value by segment                    |
-| 11         | Active User Growth                          | Monthly active customers trend               |
-| 12         | ARPU by Segment                             | Average Revenue Per User trend               |
-| 13         | Marketing Performance vs Goals (Benchmarks) | Web traffic vs campaign spend, MQLs, CAC     |
-
----
-
-## 🗺 Data Model Diagram (ERD)
-
-The model is fully normalized, reflecting realistic SaaS relational structures.
-
-> ✅ ERD provided in PNG and PDF formats in the project pack.
-
----
-
-## 📂 Project Files
-
-| File                          | Description                          |
-|-------------------------------|--------------------------------------|
-| hopify_saas_v1.py             | Python generator script (v1)        |
-| hopify_saas_v1.db             | SQLite database file (generated)     |
-| ERD_hopify_saas_v1.png        | ER diagram (PNG)                     |
-| ERD_hopify_saas_v1.pdf        | ER diagram (PDF)                     |
-| sql_queries_v1_starter_pack.sql | SQL starter pack                    |
-| sql_queries_v1_full_pack.sql  | SQL full analysis pack               |
-| sql_queries_v1_markdown.md    | SQL pack in markdown format          |
-| README.md                     | This README                          |
-
----
-
-## 🧩 Getting Started
-
-1. Open the `.db` file using any SQL client that supports SQLite:
-   - DB Browser for SQLite
-   - DBeaver
-   - SQLiteStudio
-   - Azure Data Studio (with SQLite extension)
-2. Use the provided SQL query packs or explore custom SaaS KPIs.
-
----
-
-## 📄 License
-
-Apache 2.0 License  
-This dataset and generator scripts are provided under Apache 2.0 license.
-
-=======
-
-# 📊 Hopify SaaS KPI Analysis
-
-A comprehensive portfolio case study analyzing key SaaS business metrics for **Hopify**, a simulated e-commerce enablement platform. This project demonstrates advanced KPI analysis, data storytelling, and business insight generation using SQL and Python.
-
-## 🏷️ Project Overview
-Hopify is facing challenges in customer retention, revenue growth, and operational efficiency. This analysis explores critical SaaS KPIs to identify key trends, risks, and opportunities.
+🏷️ Project Overview
+Hopify faces challenges in customer retention, revenue growth, and operational efficiency. This analysis explores critical SaaS KPIs to identify key trends, risks, and opportunities.
 
 The project covers:
-- Customer churn behavior
-- Net & Gross Revenue Retention (NRR / GRR)
-- Customer Lifetime Value (LTV)
-- ARPU trends by segment
-- Acquisition funnel insights
-- Support ticket impact on churn
-- Expansion revenue breakdown
 
-## 🛠️ Tools & Methods
-- SQL (SQLite v15 dataset)
-- Python (Pandas, Matplotlib, Seaborn)
-- KPI Benchmarking
-- Cohort & Segment Analysis
-- Data Visualization & Business Storytelling
+Customer churn behavior
 
-## 📁 Repository Structure
-```
-/data/         → Hopify database & datasets
-/sql/          → Finalized analysis SQL scripts
-/python/       → Visualization scripts for KPI insights
-/visuals/      → Charts and visuals for storytelling
-/benchmarks/   → KPI benchmark inserts
-/reports/      → Business summaries and key findings
-```
+Net & Gross Revenue Retention (NRR / GRR)
 
-## 🔍 Key Analyses & Deliverables
-- Churn Rate Analysis → Segment trends, benchmarks, visual storytelling
-- Retention Curve & Heatmap → Cohort decay visualization & targets
-- NRR / GRR Analysis → Monthly retention revenue impact
-- ARPU Trends → Revenue per user by segment & month
-- LTV Estimation → Segment-aware profitability modeling
-- Customer Acquisition Funnel → Growth insights & conversion efficiency
-- Support to Churn Correlation → Operational impact on customer retention
+Customer Lifetime Value (LTV)
 
-## 📊 Sample Visuals
-| Churn Rate by Segment | Cohort Retention Heatmap |
-|----------------------|-------------------------|
-| ## Churn Rate by Segment
-![Churn Rate](visuals/churn_rate_by_segment.png) | ![Retention Heatmap](visuals/cohort_retention_heatmap.png) |
+ARPU trends by segment
 
-## 📝 Reports & Insights
-- Cohort Retention Executive Summary
-- Revenue Growth & NRR Report
-- LTV & Profitability Findings
-- Segment-level Performance Reviews
+Acquisition funnel insights
 
-## ✅ What This Demonstrates
-- Ability to translate raw SaaS data into business insights.
-- Strong SQL analysis across customer, revenue, and retention KPIs.
-- Data storytelling through visuals & benchmarks.
-- Practical application of FP&A, RevOps, and Business Analyst skills.
+Support ticket impact on churn
 
-### ⭐ Live GitHub Repo (Portfolio Ready)
-This project serves as a showcase of SaaS KPI analysis skills for Business Analyst, FP&A, and Strategic Ops roles.
->>>>>>> 2b9b5c3 (Initial commit: Hopify SaaS KPI Analysis v1)
+Expansion revenue breakdown
+
+🛠️ Tools & Methods
+SQL (Hopify SaaS Dataset v1)
+
+Python (Pandas, Matplotlib, Seaborn)
+
+KPI Benchmarking
+
+Cohort & Segment Analysis
+
+Data Visualization & Business Storytelling
+
+📁 Repository Structure
+bash
+Copy
+Edit
+/data/         → Hopify SaaS v1 database file
+/sql/          → Finalized KPI analysis SQL scripts
+/python/       → Visualization scripts (churn, retention, ARPU, etc.)
+/visuals/      → Charts & KPI visuals (PNG)
+/benchmarks/   → KPI target benchmarks for analysis
+/reports/      → Business case summaries & executive insights
+/docs/         → Dataset technical overview & ERD
+🔍 Key Analyses & Deliverables
+Churn Rate Analysis by Segment
+
+Retention Curve & Cohort Heatmaps
+
+NRR / GRR Revenue Impact Analysis
+
+ARPU Trends & Segment Profitability
+
+LTV Estimation by Segment
+
+Support Tickets Impact on Churn
+
+Acquisition & Marketing Funnel Trends
+
+📊 Sample Visuals
+Churn Rate by Segment	Cohort Retention Heatmap
+	
+
+📝 Reports & Insights
+Cohort Retention Executive Summary
+
+Revenue Growth & NRR Report
+
+LTV & Profitability Findings
+
+Segment-level Performance Reviews
+
+✅ What This Demonstrates
+Translating SaaS business questions into KPI-driven analysis.
+
+Strong SQL + Python application for real-world business metrics.
+
+Effective data storytelling & executive reporting.
+
+Practical RevOps, FP&A, and Business Analysis skill showcase.
+
+📄 Dataset Overview
+For a detailed look at the Hopify SaaS Simulated Database (v1) structure, see:
+➡️ docs/hopify_db_dataset_overview.md

@@ -1,0 +1,14 @@
+// Optimized Churn Rate Query Flow (v1)
+digraph {
+	A [label="CUSTOMER_MONTHS
+(CTE selects months from sign-up & churn dates)"]
+	B [label="ACTIVE_CUSTOMERS
+(CTE joins churn events with current customers)"]
+	C [label="CHURNED_CUSTOMERS
+(CTE calculates churned customers by month & segment)"]
+	D [label="Output Result
+(Churn rate calculated per month & segment)"]
+	A -> B
+	B -> C
+	C -> D
+}

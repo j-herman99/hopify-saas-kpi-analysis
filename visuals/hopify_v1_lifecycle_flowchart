@@ -1,0 +1,11 @@
+// Hopify SaaS Customer Lifecycle Flow
+digraph {
+	A [label="Customer Signup" color=lightblue shape=ellipse style=filled]
+	B [label="Active Customer" color=lightgreen shape=ellipse style=filled]
+	C [label="Churn Event" color=lightcoral shape=ellipse style=filled]
+	D [label="Retention / Upsell" color=gold shape=ellipse style=filled]
+	A -> B [label=Activation]
+	B -> C [label="Churn Risk"]
+	B -> D [label="Retention Efforts"]
+	D -> B [label="Loyalty Programs"]
+}

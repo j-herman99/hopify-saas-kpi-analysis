@@ -1,22 +1,39 @@
-# Ignore SQLite DB and related files
-*.db
-*.db-journal
-*.sqlite
-*.sqlite3
+# macOS system files
+.DS_Store
 
-# Ignore Python cache and venv folders
+# Python cache
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-env/
-venv/
 
-# Ignore system files
-.DS_Store
+# SQLite databases & backups
+*.db
+*.sqlite
+*.sqlite3
+*.bak
+
+# Virtual environments
+venv/
+.env/
+.envrc
+
+# Logs & temp files
+*.log
+*.tmp
+*.swp
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# OS junk files
 Thumbs.db
 
-# Ignore zipped or archive files
-*.zip
-*.tar.gz
-*.7z
+# VS Code workspace settings
+.vscode/
+*.code-workspace
+
+# Build artifacts
+dist/
+build/
+*.egg-info/

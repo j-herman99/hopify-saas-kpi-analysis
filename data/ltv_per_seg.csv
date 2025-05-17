@@ -1,0 +1,4 @@
+customer_segment,arpu,churn_rate,estimated_ltv
+Enterprise,7761.36,0.131,59247.05
+Mid-Market,5172.13,0.1809,28591.1
+SMB,3763.38,0.4592,8195.52

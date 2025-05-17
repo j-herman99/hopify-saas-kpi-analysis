@@ -278,54 +278,51 @@ ORDER BY
 --NRR & GRR by Customer Segment & Month
 
 WITH base_mrr AS (
-
     SELECT 
         c.customer_segment,
         strftime('%Y-%m', s.start_date) AS month,
         SUM(s.subscription_price) AS starting_mrr
-		
     FROM subscriptions AS s
-    JOIN customers AS c
-    ON s.customer_id = c.customer_id
-	
+    JOIN customers AS c ON s.customer_id = c.customer_id
     WHERE s.change_type = 'signup'
-	
     GROUP BY c.customer_segment, month
 ),
-churn_mrr AS (
 
+churn_mrr AS (
     SELECT 
         c.customer_segment,
         strftime('%Y-%m', ce.churn_date) AS month,
         SUM(s.subscription_price) AS churned_mrr
-		
     FROM churn_events AS ce
-	
-    JOIN subscriptions AS s
-    ON ce.customer_id = s.customer_id
-	
-    JOIN customers AS c
-    ON ce.customer_id = c.customer_id
-	
+    JOIN subscriptions AS s ON ce.customer_id = s.customer_id
+    JOIN customers AS c ON ce.customer_id = c.customer_id
     WHERE s.start_date < ce.churn_date
-	
     GROUP BY c.customer_segment, month
 ),
-expansion_mrr AS (
 
+expansion_mrr AS (
     SELECT 
         c.customer_segment,
         strftime('%Y-%m', s.start_date) AS month,
         SUM(s.subscription_price) AS expansion_mrr
-		
     FROM subscriptions AS s
-	
-    JOIN customers c
-    ON s.customer_id = c.customer_id
-	
+    JOIN customers c ON s.customer_id = c.customer_id
     WHERE s.change_type IN ('upgrade', 'reactivation')
-	
     GROUP BY c.customer_segment, month
+),
+
+benchmarks_resolved AS (
+    SELECT segment, metric_name, target_value
+    FROM benchmarks
+    WHERE segment != 'All Segments'
+
+    UNION
+
+    SELECT 'SMB', metric_name, target_value FROM benchmarks WHERE segment = 'All Segments'
+    UNION
+    SELECT 'Mid-Market', metric_name, target_value FROM benchmarks WHERE segment = 'All Segments'
+    UNION
+    SELECT 'Enterprise', metric_name, target_value FROM benchmarks WHERE segment = 'All Segments'
 )
 
 SELECT 
@@ -334,19 +331,24 @@ SELECT
     ROUND(bm.starting_mrr, 2) AS "Starting MRR",
     ROUND(COALESCE(cm.churned_mrr, 0), 2) AS "Churned MRR",
     ROUND(COALESCE(em.expansion_mrr, 0), 2) AS "Expansion MRR",
+
     ROUND((bm.starting_mrr - COALESCE(cm.churned_mrr, 0)) * 1.0 / bm.starting_mrr * 100, 2) AS "GRR %",
-    ROUND((bm.starting_mrr - COALESCE(cm.churned_mrr, 0) + COALESCE(em.expansion_mrr, 0)) * 1.0 / bm.starting_mrr * 100, 2) AS "NRR %"
-	
-FROM 
-    base_mrr AS bm
-	
-LEFT JOIN 
-    churn_mrr AS cm
+    ROUND((bm.starting_mrr - COALESCE(cm.churned_mrr, 0) + COALESCE(em.expansion_mrr, 0)) * 1.0 / bm.starting_mrr * 100, 2) AS "NRR %",
+
+    br_nrr.target_value AS "NRR % Target",
+    br_grr.target_value AS "GRR % Target"
+
+FROM base_mrr AS bm
+LEFT JOIN churn_mrr AS cm
     ON bm.customer_segment = cm.customer_segment AND bm.month = cm.month
-	
-LEFT JOIN 
-    expansion_mrr AS em
+LEFT JOIN expansion_mrr AS em
     ON bm.customer_segment = em.customer_segment AND bm.month = em.month
-	
-ORDER BY 
-    "Month" DESC, "Customer Segment";
+
+LEFT JOIN benchmarks_resolved AS br_nrr
+    ON br_nrr.segment = bm.customer_segment AND br_nrr.metric_name = 'NRR % Target'
+
+LEFT JOIN benchmarks_resolved AS br_grr
+    ON br_grr.segment = bm.customer_segment AND br_grr.metric_name = 'GRR % Target'
+
+ORDER BY bm.month DESC, bm.customer_segment;
+

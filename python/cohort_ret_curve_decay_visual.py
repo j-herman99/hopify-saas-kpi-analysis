@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from datetime import datetime, timedelta
 
 # Connect to Hopify DB
-conn = sqlite3.connect("/Users/jade.herman/Documents/00_github/hopify_db_v1/data/hopify_saas_v1.db")
+conn = sqlite3.connect("/users/jade.herman/Documents/00_github/hopify-saas-kpi-analysis/data/hopify_saas_v1.db")
 
 # SQL Query for Retention % with Segment
 query = """
