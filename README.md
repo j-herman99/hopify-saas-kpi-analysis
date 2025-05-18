@@ -109,5 +109,10 @@ hopify-saas-kpi-v1/
 ---
 
 
+## 📑 [Scenario Index](hopify_sql_scenarios_index.md)  
+Quick reference table summarizing all 13 SQL files and their business focus.
+
+
+---
 
 
