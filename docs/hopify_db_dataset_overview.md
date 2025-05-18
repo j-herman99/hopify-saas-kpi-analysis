@@ -180,6 +180,5 @@ The project covers:
 
 ### ⭐ Live GitHub Repo (Portfolio Ready)
 This project serves as a showcase of SaaS KPI analysis skills for Business Analyst, FP&A, and Strategic Ops roles.
->>>>>>> 2b9b5c3 (Initial commit: Hopify SaaS KPI Analysis v1)
 
 
