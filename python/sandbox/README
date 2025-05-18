@@ -1,0 +1,27 @@
+# 🧪 Python Sandbox – Experimental Visualizations
+
+This folder contains exploratory Python scripts used to develop or test visualizations related to churn, retention, lifecycle, and cohort behavior for the Hopify SaaS KPI project.
+
+---
+
+## 📜 Script Index
+
+| Script | Purpose |
+|--------|---------|
+| `hopify_burndown_chart_simulated.py` | Simulates a burndown-style retention chart using synthetic churn decay |
+
+
+---
+
+## ⚠️ Notes
+
+- These scripts may require additional tweaking or input data (`.csv` or database access)
+- Final visuals may be exported to `/visuals/` if they are clean and presentation-ready
+- Recommended for internal use, prototyping, or tutorial extensions
+
+---
+
+## ✅ Suggested Use
+
+- Refactor promising scripts into `/python/` main folder for clean deliverables
+- Keep this folder for drafts, demos, or exploratory visual development

@@ -1,3 +1,5 @@
+
+
 // Hopify SaaS Customer Lifecycle Flow
 digraph {
 	A [label="Customer Signup" color=lightblue shape=ellipse style=filled]
