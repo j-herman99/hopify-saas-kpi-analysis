@@ -1,85 +1,115 @@
-# 🏗️ Hopify SaaS DB Generator  
+# 📊 Hopify v1 — SaaS KPI & Churn Analysis Project
+
 **Version:** `v1.0`  
 📅 Released: May 2025
 
-A Python-based generator that creates a realistic, benchmark-aware **B2B SaaS customer lifecycle database** for Hopify. Simulates acquisition, subscriptions, churn, and KPIs across `SMB`, `Mid-Market`, and `Enterprise` segments for SQL-based scenario analysis.
+A scenario-driven SQL project that analyzes SaaS customer behavior and KPI performance using the **Hopify v1** simulated database. Tracks churn, retention, LTV, CAC, and revenue metrics across `SMB`, `Mid-Market`, and `Enterprise` segments.
+
+This project analyzes a simulated SaaS business dataset (**Hopify v1**) using SQL and Python to uncover key performance trends in revenue, churn, retention, and customer behavior. Ideal for showcasing business analytics, FP&A, and RevOps skills.
 
 ---
 
-## 🧠 Overview
+## 🎯 Project Goals
 
-This project powers downstream SaaS analytics by generating a clean, normalized SQLite database (`hopify_saas_v1.db`) using synthetic but segment-aware customer behavior. Built entirely in Python with optional visuals and benchmark targeting.
-
----
-
-## 📁 Repository Structure
-
-```text
-/benchmarks/   → KPI target benchmarks (CSV) with optional SQL import logic
-/data/         → Generated SQLite database file: hopify_saas_v1.db
-/python/       → Python scripts for visualizing flows, matrices, and ERDs
-/visuals/      → Graphical outputs (lifecycle flow, ERD, benchmark matrix)
-/docs/         → (Optional) Dataset schema & ERD documentation
-
-```
----
-
-## 🔧 Features & Simulation Logic
-
-| ✅ Module                    | Description                                                                |
-|-----------------------------|-----------------------------------------------------------------------------|
-| Segment-aware simulation    | Customers behave differently by segment: SMB, Mid-Market, Enterprise        |
-| Multi-year cohort modeling  | Acquisition, churn, and retention behaviors evolve monthly                  |
-| Churn & retention decay     | Dynamic decay curves by segment simulate SaaS behavior                      |
-| Benchmarks table            | Optional hardcoded or CSV-driven benchmarks for KPI tracking                |
-| Visual generation           | Lifecycle flow, ERD, and KPI matrix auto-generated for storytelling         |
+- Analyze **monthly churn rates**, **customer retention**, and **net revenue retention (NRR)**
+- Evaluate **ARPU**, **LTV**, and **segment profitability** across SMB, Mid-Market, and Enterprise tiers
+- Visualize **support ticket impact** on churn and model acquisition funnel behavior
+- Demonstrate real-world application of SQL, Python, and SaaS financial metrics
 
 ---
+
+## 🧩 Dataset Structure
+
+Includes a realistic ERD covering:
+
+| Table             | Description                              |
+|------------------|------------------------------------------|
+| `customers`       | Customer profiles and segmentation       |
+| `subscriptions`   | Subscription history and status changes  |
+| `orders`          | Customer purchases over time             |
+| `payments`        | Revenue transactions incl. churn impact  |
+| `products`        | SaaS product types and price plans       |
+| `benchmarks`      | SaaS benchmark KPIs for analysis         |
+| `support_tickets` | Ticket volume and resolution status      |
+| `web_traffic`     | Simulated monthly site sessions/visits   |
+
+📎 [View ERD](./hopify_v1_erd.png)
 
 ---
 
 ## 🔍 Key Analyses & Deliverables
 
-### 📈 Analysis Modules
-- Churn Rate Analysis by Segment  
-- Retention Curve & Cohort Heatmaps  
-- NRR / GRR Revenue Impact Analysis  
-- ARPU Trends & Segment Profitability  
-- LTV Estimation by Segment  
-- Support Ticket Volume vs. Churn  
-- Acquisition & Marketing Funnel Trends  
+- **Churn Rate Analysis** by Month & Segment
+- **Retention Curve & Cohort Heatmaps**
+- **NRR / GRR Revenue Impact Reports**
+- **ARPU Trends & Segment Profitability**
+- **LTV Estimation by Segment**
+- **Support Ticket Impact on Churn**
+- **Acquisition & Marketing Funnel Trends**
 
 ---
 
 ## 📊 Sample Visuals
 
-| Visual Title              | Description                          |
-|---------------------------|--------------------------------------|
-| Churn Rate by Segment     | Monthly churn breakdown by segment   |
-| Cohort Retention Heatmap  | Visual decay curve by signup cohort  |
+| Churn Rate by Segment | Cohort Retention Heatmap |
+|-----------------------|--------------------------|
+| ![](screenshots/churn_rate_segment.png) | ![](screenshots/cohort_heatmap.png) |
 
 ---
 
 ## 📝 Reports & Insights
 
-- Cohort Retention Executive Summary  
-- Revenue Growth & NRR Report  
-- LTV & Profitability Findings  
-- Segment-Level Performance Reviews  
+- Cohort Retention Executive Summary
+- Revenue Growth & NRR Report
+- LTV & Profitability Findings
+- Segment-level Performance Reviews
+
+---
+
+## 🛠️ Tools & Skills Demonstrated
+
+- SQL (window functions, CTEs, case logic)
+- Python (Pandas, Matplotlib, Seaborn)
+- SaaS Metrics: NRR, GRR, ARPU, LTV, CAC, Churn
+- Data storytelling and dashboard design
+- GitHub documentation & reproducibility
 
 ---
 
 ## ✅ What This Demonstrates
 
-- Translating SaaS business questions into KPI-driven analysis  
-- Strong SQL + Python applied to real-world metrics  
-- Effective data storytelling & executive reporting  
-- Practical RevOps, FP&A, and Business Analysis skill showcase  
+- Translating SaaS business questions into KPI-driven analysis.
+- Strong SQL + Python application for real-world business metrics.
+- Effective data storytelling & executive reporting.
+- Practical RevOps, FP&A, and Business Analysis skill showcase.
 
 ---
 
-## 📄 Dataset Overview
+## 📁 Project Structure
 
-For a detailed look at the Hopify SaaS Simulated Database (v1) structure, see:  
-➡️ `docs/hopify_db_dataset_overview.md`
+```plaintext
+hopify-saas-kpi-v1/
+├── data/
+│   └── hopify_v1.db
+├── scripts/
+│   └── hopify_db_v1_gen.py
+├── queries/
+│   ├── sql_queries_v1_starter_pack.sql
+│   ├── sql_queries_v1_full_pack.sql
+│   └── sql_queries_v1_markdown.md
+├── reports/
+│   └── hopify_kpi_analysis_summary.pdf
+├── visualizations/
+│   ├── churn_rate_segment.png
+│   ├── cohort_heatmap.png
+├── assets/
+│   └── hopify_v15_erd.png
+└── README.md
+
+```
+
+---
+
+
+
 
