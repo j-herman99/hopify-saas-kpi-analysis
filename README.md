@@ -5,8 +5,6 @@
 
 A scenario-driven SQL project that analyzes SaaS customer behavior and KPI performance using the **Hopify v1** simulated database. Tracks churn, retention, LTV, CAC, and revenue metrics across `SMB`, `Mid-Market`, and `Enterprise` segments.
 
-This project analyzes a simulated SaaS business dataset (**Hopify v1**) using SQL and Python to uncover key performance trends in revenue, churn, retention, and customer behavior. Ideal for showcasing business analytics, FP&A, and RevOps skills.
-
 ---
 
 ## 🎯 Project Goals
