@@ -1,7 +1,7 @@
 # 📊 Hopify v1 — SaaS KPI & Churn Analysis Project
 
 **Version:** `v1.0`  
-📅 Released: May 2025
+📅 Released: June 2025
 
 A scenario-driven SQL project that analyzes SaaS customer behavior and KPI performance using the **Hopify v1** simulated database. Tracks churn, retention, LTV, CAC, and revenue metrics across `SMB`, `Mid-Market`, and `Enterprise` segments.
 
