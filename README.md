@@ -51,7 +51,8 @@ Includes a realistic ERD covering:
 
 | Churn Rate by Segment | Cohort Retention Heatmap |
 |-----------------------|--------------------------|
-| ![](screenshots/churn_rate_segment.png) | ![](screenshots/cohort_heatmap.png) |
+| ![](visuals/01_Project_Churn_Retention_Analysis/01-hopify-monthly-churn-seg-line-chart.png) | ![](visuals/01_Project_Churn_Retention_Analysis/01-hopify-cohort-retention-heatmap-enterprise.png) |
+
 
 ---
 
