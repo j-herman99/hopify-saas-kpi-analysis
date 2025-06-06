@@ -1,0 +1,4 @@
+segment,total_customers,total_orders,total_initial_order_value,total_collected_payments,expansion_revenue
+Mid-Market,18925,35920,51480927.79,76115046.17,24634118.38
+SMB,31532,45922,69428241.69,93113611.94,23685370.25
+Enterprise,6943,17902,28254160.54,44654173.44,16400012.9

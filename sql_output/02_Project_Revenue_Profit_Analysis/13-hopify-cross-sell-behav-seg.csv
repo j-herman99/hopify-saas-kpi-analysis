@@ -1,0 +1,31 @@
+customer_id,Segment,Distinct Categories,Categories Purchased,Total Items Purchased,Total Revenue
+63381,Enterprise,4,"Payments & Finance,POS Hardware & Software,Financial Services,Apps & Integrations",51,17385.33
+6756,Enterprise,4,"POS Hardware & Software,Financial Services,Payments & Finance,Apps & Integrations",52,15466.63
+45557,Enterprise,4,"Financial Services,Payments & Finance,Apps & Integrations,POS Hardware & Software",52,15413.16
+58522,Enterprise,4,"Payments & Finance,POS Hardware & Software,Financial Services,Apps & Integrations",55,15369.23
+27037,Enterprise,4,"POS Hardware & Software,Financial Services,Payments & Finance,Apps & Integrations",48,15264.65
+66798,Enterprise,4,"POS Hardware & Software,Apps & Integrations,Financial Services,Payments & Finance",50,15210.05
+29334,Enterprise,4,"POS Hardware & Software,Financial Services,Payments & Finance,Apps & Integrations",48,14956.56
+5011,Enterprise,4,"POS Hardware & Software,Payments & Finance,Financial Services,Apps & Integrations",46,14952.13
+59709,Enterprise,4,"POS Hardware & Software,Payments & Finance,Apps & Integrations,Financial Services",42,14623.84
+25813,Enterprise,4,"Payments & Finance,Apps & Integrations,POS Hardware & Software,Financial Services",40,14473.55
+26849,Mid-Market,3,"Marketing & Growth,Apps & Integrations,Storefront Tools",37,10811.13
+68051,Mid-Market,3,"Storefront Tools,Apps & Integrations,Marketing & Growth",29,10528.27
+47499,Mid-Market,3,"Storefront Tools,Apps & Integrations,Marketing & Growth",32,10457.69
+890,Mid-Market,3,"Marketing & Growth,Apps & Integrations,Storefront Tools",31,10144.41
+58693,Mid-Market,3,"Apps & Integrations,Storefront Tools,Marketing & Growth",30,10061.67
+51484,Mid-Market,3,"Apps & Integrations,Marketing & Growth,Storefront Tools",27,10033.16
+66363,Mid-Market,3,"Apps & Integrations,Storefront Tools,Marketing & Growth",32,9922.94
+20932,Mid-Market,3,"Marketing & Growth,Storefront Tools,Apps & Integrations",27,9914.62
+16893,Mid-Market,3,"Apps & Integrations,Storefront Tools,Marketing & Growth",32,9859.57
+63627,Mid-Market,3,"Marketing & Growth,Storefront Tools,Apps & Integrations",29,9802.89
+13855,SMB,3,"Storefront Tools,Logistics & Shipping,Marketing & Growth",26,9478.08
+5081,SMB,3,"Marketing & Growth,Storefront Tools,Logistics & Shipping",26,9172.25
+16181,SMB,3,"Storefront Tools,Marketing & Growth,Logistics & Shipping",22,8986.43
+62545,SMB,3,"Marketing & Growth,Storefront Tools,Logistics & Shipping",23,8357.48
+36321,SMB,3,"Logistics & Shipping,Storefront Tools,Marketing & Growth",21,7908.81
+45756,SMB,3,"Storefront Tools,Logistics & Shipping,Marketing & Growth",26,7839.2
+11510,SMB,3,"Storefront Tools,Marketing & Growth,Logistics & Shipping",24,7838.41
+66388,SMB,3,"Logistics & Shipping,Marketing & Growth,Storefront Tools",21,7798.33
+15360,SMB,3,"Storefront Tools,Logistics & Shipping,Marketing & Growth",23,7763.05
+66512,SMB,3,"Storefront Tools,Logistics & Shipping,Marketing & Growth",22,7727.89

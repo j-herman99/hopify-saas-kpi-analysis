@@ -1,0 +1,11 @@
+Segment,Support Ticket Group,Churned Customers,Customers in Group,Churn Rate %,Customer % of Segment,Churn Risk Level
+Enterprise,All Customers,742,7354,10.09,100.0,Reference
+Enterprise,High Support Volume (5+ Tickets),389,1959,19.86,26.64,Moderate Risk
+Enterprise,No Support Tickets,353,5395,6.54,73.36,Low Risk
+Mid-Market,All Customers,1990,22197,8.97,100.0,Reference
+Mid-Market,High Support Volume (5+ Tickets),222,1114,19.93,5.02,Moderate Risk
+Mid-Market,Low-Mid Support Volume (1-4 Tickets),223,4790,4.66,21.58,Low Risk
+Mid-Market,No Support Tickets,1545,16293,9.48,73.4,Low Risk
+SMB,All Customers,9219,44529,20.7,100.0,Reference
+SMB,Low-Mid Support Volume (1-4 Tickets),1138,6061,18.78,13.61,Moderate Risk
+SMB,No Support Tickets,8081,38468,21.01,86.39,Moderate Risk

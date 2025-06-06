@@ -1,0 +1,34 @@
+benchmark_id,metric_category,segment,metric_name,target_value,description,target_period
+1,Retention KPIs,SMB,Monthly Churn Target (%),4.0,Target monthly churn rate for SMB customers,monthly
+2,Retention KPIs,Mid-Market,Monthly Churn Target (%),2.0,Target monthly churn rate for Mid-Market customers,monthly
+3,Retention KPIs,Enterprise,Monthly Churn Target (%),0.75,Target monthly churn rate for Enterprise customers,monthly
+4,Revenue KPIs,Enterprise,ARPU Target,1800.0,Monthly average revenue goal per Enterprise customer,monthly
+5,Revenue KPIs,Enterprise,CAC Target,1000.0,Monthly cost goal to acquire one new Enterprise customer,monthly
+6,Revenue KPIs,Enterprise,LTV Target,60000.0,Estimated lifetime value of a full Enterprise customer account,lifetime
+7,Revenue KPIs,Enterprise,MRR Target,250000.0,Monthly recurring revenue goal from Enterprise customers,monthly
+8,Revenue KPIs,Enterprise,GRR Target (%),97.0,Percent of monthly revenue expected to be retained from Enterprise,monthly
+9,Revenue KPIs,Enterprise,NRR Target (%),125.0,Percent of monthly revenue expected to grow from Enterprise accounts,monthly
+10,Revenue KPIs,Enterprise,ARR Target,3000000.0,Annual recurring revenue goal for Enterprise segment,Annual
+11,Revenue KPIs,Enterprise,Monthly New Customers Target,20.0,Number of new Enterprise customers we aim to acquire each month,monthly
+12,Revenue KPIs,Mid-Market,ARPU Target,1600.0,Monthly average revenue goal per Mid-Market customer,monthly
+13,Revenue KPIs,Mid-Market,CAC Target,500.0,Monthly cost goal to acquire one new Mid-Market customer,monthly
+14,Revenue KPIs,Mid-Market,LTV Target,30000.0,Estimated lifetime value of a full Mid-Market customer account,lifetime
+15,Revenue KPIs,Mid-Market,MRR Target,125000.0,Monthly recurring revenue goal from Mid-Market customers,monthly
+16,Revenue KPIs,Mid-Market,GRR Target (%),92.0,Percent of monthly revenue expected to be retained from Mid-Market,monthly
+17,Revenue KPIs,Mid-Market,NRR Target (%),115.0,Percent of monthly revenue expected to grow from Mid-Market accounts,monthly
+18,Revenue KPIs,Mid-Market,ARR Target,1500000.0,Annual recurring revenue goal for Mid-Market segment,annual
+19,Revenue KPIs,Mid-Market,Monthly New Customers Target,200.0,Number of new Mid-Market customers we aim to acquire each month,monthly
+20,Revenue KPIs,SMB,ARPU Target,1200.0,Monthly average revenue goal per SMB customer,monthly
+21,Revenue KPIs,SMB,CAC Target,200.0,Monthly cost goal to acquire one new SMB customer,monthly
+22,Revenue KPIs,SMB,LTV Target,3800.0,Estimated lifetime value of a full SMB customer account,lifetime
+23,Revenue KPIs,SMB,MRR Target,41667.0,Monthly recurring revenue goal from SMB customers,monthly
+24,Revenue KPIs,SMB,GRR Target (%),85.0,Percent of monthly revenue expected to be retained from SMB,monthly
+25,Revenue KPIs,SMB,NRR Target (%),95.0,Percent of monthly revenue expected to grow from SMB accounts,monthly
+26,Revenue KPIs,SMB,ARR Target,2000000.0,Annual recurring revenue goal for SMB segment,annual
+27,Revenue KPIs,SMB,Monthly New Customers Target,1200.0,Number of new SMB customers we aim to acquire each month,monthly
+28,Marketing KPIs,Enterprise,MQL Conversion Rate (%),18.0,Percent of leads expected to convert to Enterprise customers monthly,monthly
+29,Marketing KPIs,Enterprise,Support to Churn Correlation (%),10.0,Monthly churn impact from support interactions for Enterprise,monthly
+30,Marketing KPIs,Mid-Market,MQL Conversion Rate (%),12.0,Percent of leads expected to convert to Mid-Market customers monthly,monthly
+31,Marketing KPIs,Mid-Market,Support to Churn Correlation (%),20.0,Monthly churn impact from support interactions for Mid-Market,monthly
+32,Marketing KPIs,SMB,MQL Conversion Rate (%),5.0,Percent of leads expected to convert to SMB customers monthly,monthly
+33,Marketing KPIs,SMB,Support to Churn Correlation (%),30.0,Monthly churn impact from support interactions for SMB,monthly

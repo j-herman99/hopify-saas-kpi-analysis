@@ -1,0 +1,4 @@
+Month,Segment,Churned Customers,Active Customers,Churn Rate %,Retention %,Benchmark %,Variance %,Avg. Support Tickets,Avg. Resolution Days
+2025-05,Enterprise,114,6726,1.69,98.31,0.75,0.94,1.79,0.88
+2025-05,Mid-Market,227,20434,1.11,98.89,2.0,-0.89,0.88,1.75
+2025-05,SMB,978,36288,2.7,97.3,4.0,-1.3,0.2,2.98

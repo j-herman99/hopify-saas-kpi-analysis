@@ -1,0 +1,4 @@
+Customer Segment,Month,Starting MRR,Churned MRR,Expansion MRR,GRR %,NRR %,NRR Target (%),GRR Target (%),NRR Target Status,GRR Target Status
+Enterprise,2025-04,192804.71,47921.29,50429.1,75.15,101.3,125.0,97.0,Below Target,Below Target
+Mid-Market,2025-04,160560.07,40637.26,36312.85,74.69,97.31,115.0,92.0,Below Target,Below Target
+SMB,2025-04,97161.78,49754.37,13236.55,48.79,62.42,95.0,85.0,Below Target,Below Target

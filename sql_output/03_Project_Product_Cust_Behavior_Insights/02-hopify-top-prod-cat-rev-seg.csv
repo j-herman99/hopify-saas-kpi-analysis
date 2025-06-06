@@ -1,0 +1,11 @@
+customer_segment,category,total_orders,total_revenue
+Enterprise,POS Hardware & Software,24010,27794303.31
+Enterprise,Payments & Finance,20161,14362547.65
+Enterprise,Financial Services,15305,9282420.61
+Enterprise,Apps & Integrations,8740,4952440.1
+Mid-Market,Storefront Tools,48227,40332955.32
+Mid-Market,Apps & Integrations,48221,40138666.29
+Mid-Market,Marketing & Growth,30574,22405275.61
+SMB,Storefront Tools,71867,67185662.49
+SMB,Marketing & Growth,54448,45416224.75
+SMB,Logistics & Shipping,41221,27256780.33
