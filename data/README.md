@@ -12,4 +12,4 @@ You can open this file using:
 - Python (via `sqlite3` or `pandas.read_sql_query()`)
 
 This file is generated in the companion repo:  
-🔗 [Hopify SaaS DB Generator](https://github.com/jherman9987/hopify-saas-db-generator)
+🔗 [Hopify SaaS DB Generator](https://github.com/j-herman99/hopify-saas-db)
