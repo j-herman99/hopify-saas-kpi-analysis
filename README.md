@@ -1,4 +1,14 @@
+
 # 📊 Hopify v1 — SaaS KPI & Churn Analysis Project
+
+![SQL](https://img.shields.io/badge/SQL-SQLite-lightgrey?logo=sqlite)
+![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)
+![Pandas](https://img.shields.io/badge/Pandas-DataFrames-150458?logo=pandas)
+![NumPy](https://img.shields.io/badge/NumPy-Numerical%20Computing-013243?logo=numpy)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-orange?logo=matplotlib)
+![Seaborn](https://img.shields.io/badge/Seaborn-Statistical%20Plots-lightblue?logo=python)
+
+
 
 **Version:** `v1.0`  
 📅 Released: June 2025
