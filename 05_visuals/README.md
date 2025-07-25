@@ -1,40 +1,45 @@
-# 🎨 Visuals – Hopify KPI Analysis
+# 🖼️ Hopify Visual Assets
 
-This folder contains presentation-ready charts, flow diagrams, and retention visuals generated from SQL outputs and Python scripts in the Hopify SaaS KPI project.
-
-These visuals support stakeholder reports, dashboards, and storytelling use cases.
+This folder contains all supporting visualizations used across the Hopify business analysis portfolio. Visuals are grouped by project and aligned to core business questions such as churn patterns, revenue trends, customer behavior, and product performance. These assets support executive summaries, presentations, and dashboard prototypes.
 
 ---
 
-## 🖼️ Visual Index
+## 📁 Folder Structure
 
-| File | Description |
-|------|-------------|
-| `hopify_churn_bar_chart.png` | Monthly churn volume or percentage in bar chart format |
-| `hopify_churn_rate_by_segment.png` | Churn rate trendline split by SMB, Mid-Market, and Enterprise |
-| `hopify_enterprise_retention_heatmap.png` | Cohort retention heatmap for Enterprise customers |
-| `hopify_mid-market_retention_heatmap.png` | Retention by cohort for Mid-Market customers |
-| `hopify_smb_retention_heatmap.png` | SMB retention visualized by monthly cohorts |
-| `hopify_nrr_seg_actual_target.png` | NRR by segment with overlayed benchmark targets |
-| `hopify_nrr_vs_target_chart.png` | Global NRR performance vs. benchmarks |
-| `hopify_retention_funnel_flowchart.png` | Flow from signup → usage → retention/churn |
-| `hopify_lifecycle_flowchart.png` | Full lifecycle flow: acquisition → activation → churn |
+Each subfolder corresponds to a distinct business analysis project:
+
+| Folder Name                               | Project Focus                               |
+|-------------------------------------------|----------------------------------------------|
+| `01_project_churn_retention_analysis`     | Churn trends, retention cohorts, support vs churn, segment decay |
+| `02_project_revenue_profit_analysis`      | ARPU/MRR/NDR/GRR trends, LTV, CAC payback    |
+| `03_project_product_cust_behavior_insights` | AOV, customer segments, cross-sell patterns, product performance |
 
 ---
 
-## 📦 Source Scripts
+## 🧠 How to Use
 
-These visuals are generated from:
+Each folder contains:
 
-- SQL: `/sql/` and outputs from `/sql_outputs/`
-- Python: `/python/` and `/python/sandbox/`
+- Numbered `.png` images (static visualizations)
+- Occasional `.csv` tables or `.html` interactive files
+- Matching analysis scripts in `/02_python` for reproducibility
+
+You can embed these visuals in:
+
+- 📊 Power BI dashboards or Tableau reports
+- 📄 Executive slides or Notion documentation
+- 🧪 Jupyter notebooks or Streamlit apps
 
 ---
 
-## 📝 Usage Notes
+## 📌 Related Assets
 
-- Use in reports (`/reports/`) or dashboards
-- Embeddable in PDFs, slide decks, and GitHub README.md
-- SVG versions can be exported from Python scripts where available
+- **SQL Queries:** [`/01_sql`](../01_sql/)
+- **Python Scripts:** [`/02_python`](../02_python/)
+- **Database Generator:** [`/01_Project_Artifacts/04-generate-db-saas-hopify/`](../01_Project_Artifacts/04-generate-db-saas-hopify/)
+
+---
+
+> ✅ *Last Updated: July 2025 — Hopify SaaS Portfolio Visualization Index*
 
 ---

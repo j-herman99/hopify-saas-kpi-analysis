@@ -1,53 +1,39 @@
-# 🧠 SQL Analysis Pack – Hopify KPI Project
+# 🧠 Hopify SQL Analysis Suite
 
-This folder contains all core SQL scripts used in the Hopify SaaS KPI analysis project. Each script maps to a distinct business scenario and is designed for reproducibility, benchmarking, and executive reporting.
-
----
-
-## 🗃 Scenario Scripts (1–13)
-
-These files are organized by scenario number and focus area:
-
-| Scenario | File | Description |
-|----------|------|-------------|
-| 1 | `1-hopify_churn_analysis.sql` | Monthly churn + retention breakdown |
-| 2 | `2-hopify_revenue_analysis.sql` | Revenue trends and ARPU breakdown |
-| 3 | `3-hopify_cohort_retention_analysis.sql` | Retention curve by cohort |
-| 4 | `4-hopify_top_products_analysis.sql` | Top products and category revenue |
-| 5 | `5-hopify_customer_seg_behavior.sql` | Segment behavior (orders, churn, support) |
-| 6 | `6-hopify_stickets_vs_churn.sql` | Ticket volume and churn risk |
-| 7 | `7-hopify_nrr_grr_analysis.sql` | NRR and GRR by month and segment |
-| 8 | `8-hopify_customer_acquistion_analysis.sql` | Monthly new customer growth |
-| 9 | `9-hopify_expansion_rev_analysis.sql` | Expansion vs net new revenue |
-| 10 | `10-hopify_ltv_segment_analysis.sql` | Lifetime Value by segment |
-| 11 | `11-hopify_active_users_analysis.sql` | Active user trends based on payments |
-| 12 | `12-hopify_avg_rev_user_analysis.sql` | ARPU with segment benchmarks |
-| 13 | `13-hopify_benchmarks_table_updates.sql` | Inserts & updates for benchmarks table |
+This folder contains the full set of SQL scripts used across all major scenarios in the Hopify SaaS KPI Analysis project. Each subfolder aligns to a portfolio project focused on core business questions.
 
 ---
 
-## 🧩 Shared Views & Reusables
+## 📁 Folder Structure
+
+| Folder | Description |
+|--------|-------------|
+| `01_project_churn_retention_analysis` | SQL queries for churn rates, retention snapshots, signup cohorts, and support resolution trends |
+| `02_project_revenue_profit_analysis` | SQL analysis for monthly revenue, ARPU, CAC payback, NRR/GRR, LTV, ARR, and customer value |
+| `03_project_product_cust_behavior_insights` | Queries covering product performance, AOV, segment behavior, support friction, and engagement |
+
+---
+
+## 🧩 SQL Reference Docs
 
 | File | Purpose |
 |------|---------|
-| `hopify_common_metrics_views.sql` | Defines views for churn, LTV, NRR, GRR, ARPU |
-| `universal_kpi_script.sql` | Unified query for multiple KPIs + benchmarks |
-| `hopify_sql_scenarios_index.md` | Markdown table linking each scenario to its use case |
+| `hopify_sql_best_practices.md` | Style guide for writing clean, modular SQL with Hopify conventions |
+| `hopify_sql_scenarios_index.md` | Mapping of SQL files to business scenarios and data storyboards |
+
+> Tip: Each project subfolder includes its own `README.md` that lists all files in a table with descriptions.
 
 ---
 
-## 📑 Style & Best Practices
+## ✅ SQL Query Themes
 
-Follow the formatting and design guidance in:
-
-📄 [`sql_best_practices_hopify.md`](sql_best_practices_hopify.md)
-
----
-
-## 🧪 Usage Tips
-
-- All queries assume you're connected to `hopify_saas_v1.db`
-- You can test scripts directly in DBeaver, DB Browser, or SQLite CLI
-- For Power BI / Excel use, export results from the SQL client or reference from `/sql_outputs/`
+- Churn & retention by cohort and segment
+- Benchmarking vs targets (e.g., ARPU, MRR, NRR)
+- Expansion vs new revenue tracking
+- Support volume vs risk indicators
+- Product & customer behavior insights
+- Subscription velocity and engagement patterns
 
 ---
+
+Each query is designed to support chart generation, executive summaries, and slide presentations found in the `02_documentation` folder.
