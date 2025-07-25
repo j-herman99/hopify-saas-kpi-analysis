@@ -1,12 +1,12 @@
 
 # 📊 Hopify v1 — SaaS KPI & Churn Analysis Project
 
-![SQL](https://img.shields.io/badge/SQL-SQLite-lightgrey?logo=sqlite)
-![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)
-![Pandas](https://img.shields.io/badge/Pandas-DataFrames-150458?logo=pandas)
-![NumPy](https://img.shields.io/badge/NumPy-Numerical%20Computing-013243?logo=numpy)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-orange?logo=matplotlib)
-![Seaborn](https://img.shields.io/badge/Seaborn-Statistical%20Plots-lightblue?logo=python)
+![Built With: Python 3.10](https://img.shields.io/badge/Built%20With-Python%203.10-06b6d4?style=flat&labelColor=333&logo=python&logoColor=white)
+![Language: SQL (SQLite)](https://img.shields.io/badge/Language-SQL%20(SQLite)-3b82f6?style=flat&labelColor=333&logo=sqlite&logoColor=white)
+![Libraries: Pandas | NumPy](https://img.shields.io/badge/Libraries-Pandas%20%7C%20NumPy-6366f1?style=flat&labelColor=333&logo=pandas&logoColor=white)
+![Visualization: Matplotlib | Seaborn](https://img.shields.io/badge/Visualization-Matplotlib%20%7C%20Seaborn-9333ea?style=flat&labelColor=333&logo=python&logoColor=white)
+![Status: Complete](https://img.shields.io/badge/Status-Complete-facc15?style=flat&labelColor=333)
+
 
 ---
 
